@@ -17,3 +17,16 @@
 1496675284 source:d:\clases\new folder\genhuffman\test.cpp
 	"Test.h"
 
+1496675284 source:d:\clases\algoritmos\genhuffman\test.cpp
+	"Test.h"
+
+1496675284 d:\clases\algoritmos\genhuffman\test.h
+	<iostream>
+	<vector>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<map>
+	<queue>
+	<list>
+
