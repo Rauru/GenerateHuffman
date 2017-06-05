@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1496698544 source:d:\clases\new folder\genhuffman\main.cpp
+	"Test.h"
+	<iostream>
+	"vector"
+
+1496675284 d:\clases\new folder\genhuffman\test.h
+	<iostream>
+	<vector>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<map>
+	<queue>
+	<list>
+
+1496675284 source:d:\clases\new folder\genhuffman\test.cpp
+	"Test.h"
+
