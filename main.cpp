@@ -145,14 +145,14 @@ map<char,string> getHuffman2(vector<char> characters, vector<int> frequencies)
     return answer;
 }
 
-Node * order(vector<Node*> *heap)
+Node * removeTopFromHeap(vector<Node*> *heap)
 {
     Node * answer = (*heap)[0];
     (*heap)[0] = (*heap)[heap->size()-1];
     heap->pop_back();
 
     int current = 0;
-    while(current < heap->size())
+    while(current < heap->size()-1)
     {
         int LeftNode = (current *2)+1;
         int RightNode = (current *2)+2;
@@ -187,8 +187,8 @@ map<char,string> getHuffman(vector<char> characters, vector<int> frequencies)
     }
 
     while(min_heap.size()>1){
-    Node *left = order(&min_heap);
-    Node *right = order(&min_heap);
+    Node *left = removeTopFromHeap(&min_heap);
+    Node *right = removeTopFromHeap(&min_heap);
     Node * root = new Node((char)NULL,left->frequency + right->frequency);
     root->left = left;
     root->right = right;
